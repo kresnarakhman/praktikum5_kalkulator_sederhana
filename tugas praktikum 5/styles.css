@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/asset/bgjpg.jpg'); /* Ganti 'nama_file_gambar.jpg' dengan nama file gambar yang Anda inginkan */
+    background-size: cover; /* Untuk memastikan gambar latar belakang mencakup seluruh area body */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-position: center; /* Menempatkan gambar latar belakang di tengah-tengah halaman */
+}
+
+.calculator {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #0f0303;
+    border-radius: 15px;
+    background-color: #bcbdac;
+    box-shadow: 0 4px 8px rgba(115, 11, 11, 0.1);
+}
+
+.calculator input[type="text"] {
+    width: calc(100% - 40px);
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 40px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #d8d0d0;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.calculator .history {
+    width: calc(100% - 40px);
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #46934e;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.calculator .buttons button {
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #aacae1;
+    transition: background-color 0.3s ease;
+}
+
+.calculator .buttons button:hover {
+    background-color: #a19c9c;
+}
+
+.calculator .buttons button.operator {
+    background-color: #ff9800;
+    color: white;
+}
+
+.calculator .buttons button:hover {
+    background-color: #a19c9c;
+}
+
+.calculator .buttons button.function {
+    background-color: #9c1616;
+    color: white;
+}
+
+.calculator .buttons button:hover {
+    background-color: #ebebeb;
+}
